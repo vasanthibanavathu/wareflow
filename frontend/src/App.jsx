@@ -8,7 +8,7 @@ import useWarehouseSocket from './hooks/useWarehouseSocket'
 export default function App() {
   const [currentView, setCurrentView] = useState('landing') // 'landing', 'store' or 'warehouse'
   const [speedMultiplier, setSpeedMultiplier] = useState(1)
-  const { frameData, connectionStatus } = useWarehouseSocket('ws://localhost:8000/ws', speedMultiplier)
+  const { frameData, connectionStatus } = useWarehouseSocket(import.meta.env.VITE_WS_URL || 'ws://localhost:8000/ws', speedMultiplier)
 
   const [flashColor, setFlashColor] = useState(null)
   const flashTimeout = useRef(null)
