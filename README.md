@@ -25,3 +25,4 @@ npm run dev
 ```
 
 Navigate to the provided localhost URL (typically `http://localhost:5173` or `http://localhost:3000`) in your browser to access the DevMatrixx Control Panel.
+Maintained by Vasanthi Banavathu.
